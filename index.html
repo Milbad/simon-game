@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>Simon Game</header>
+    <div id="game" class="centered">
+        <div id="colors">
+            <div class="row">
+                <div id="green" value="green" class="color"></div>
+                <div id="red" value="red" class="color"></div>
+            </div>
+            <div class="row">
+                <div id="yellow" value="yellow" class="color"></div>
+                <div id="blue" value="blue" class="color"></div>
+            </div>
+        </div>
+        <div id="board">
+            <h1 id="game-title">MyGame</h1>
+            <div id="command">
+                <span id="strictlight"></span>
+                <div class="row">
+                    <div id="count"></div>
+                    <button id="start" class="board-btn"></button>
+                    <button id="strict" class="board-btn"></button>
+                </div>
+                <div class="row">
+                    <p id="count-label" class="label">COUNT</p>
+                    <p id="start-label" class="label">START</p>
+                    <p id="strict-label" class="label">STRICT</p>
+                </div>
+                <div class="row">
+                  <p class="label" id="off">OFF</p>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider"></div>
+                  </label>
+                <p class="label" id="on">ON</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>

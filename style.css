@@ -1,0 +1,325 @@
+body {
+    background-color: white;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.label {
+    font-size: 10px;
+    position: relative;
+    left: 45px;
+    margin-top: 0;
+    padding-top: 0;
+}
+#strictlight {
+    width: 8px;
+    background-color: black;
+    border: 2px solid black;
+    height: 8px;
+    border-radius: 80px;
+    margin-left: 189px;
+    margin-top: -15px;
+    position: absolute;
+}
+#count-label {
+    margin-right: 43px;
+}
+#start-label {
+    margin-right: 26px;
+}
+#game-title {
+    font-size: 45px;
+}
+.board-btn {
+    box-shadow: 0 0 7px black;
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+#count {
+    width: 60px;
+    color: red;
+    font-size: 27px;
+    background-color: black;
+    height: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+}
+#start {
+    background-color: red;
+}
+#strict {
+    background-color: yellow;
+}
+.board-btn,
+#count {
+    position: relative;
+    left: 30px;
+    margin-right: 30px;
+}
+#game {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+#board {
+    border: 10px solid black;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    top: 200px;
+    margin-left: 115px;
+    background-color: lightgray;
+    z-index: 1;
+    position: fixed;
+}
+#colors{
+  width:100%;
+  height: 100%;
+}
+.color {
+    width: 50%;
+    height: 100%;
+}
+.row {
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+}
+#blue {
+    background-color: #1a4791;
+    border-bottom-right-radius: 100%;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+}
+#red {
+    background-color: #a01208;
+    border-top-right-radius: 100%;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+}
+#yellow {
+    background-color: #cecc2f;
+    border-bottom-left-radius: 100%;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+}
+#green {
+    background-color: #458704;
+    border-top-left-radius: 100%;
+    border-left: 10px solid black;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.highlight {
+    background-color: #ffff1a !important;
+}
+.highlightred {
+    background-color: #ff1a1a !important;
+}
+.highlightblue {
+    background-color: #0099ff !important;
+}
+.highlightgreen {
+    background-color: #00ff00 !important;
+}
+/* The switch - the box around the slider */
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 17px;
+    top:197px;
+    left: 108px;
+}
+/* Hide default HTML checkbox */
+
+.switch input {
+    display: none;
+}
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 13px;
+    left: 1px;
+    bottom: 1px;
+    background-color: #3f9ca3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: black;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px black;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+#on,
+#off {
+    position: absolute;
+    top: 199px;
+    font-size: 10px;
+}
+#off {
+    left: 85px;
+}
+#on {
+    left: 145px;
+}
+.hide {
+    display: none !important;
+}
+.centered {
+    position: fixed;
+    top: 70px;
+    left: 20%;
+}
+/*media query */
+@media screen and (max-width: 660px) {
+  #game {
+    width:350px;
+    height: 350px;
+  }
+  #board {
+    width:175px;
+    height: 175px;
+    top:168px;
+    margin-left: 80px;
+  }
+  #game-title {
+    font-size: 30px;
+  }
+  #strictlight {
+    width: 5px;
+    height: 5px;
+    margin-top: -17px;
+    margin-left: 135px;
+  }
+  #count {
+    left: 20px;
+    width: 40px;
+    margin-right: 25px;
+    font-size: 15px;
+    height: 20px;
+    line-height: 23px;
+  }
+  .centered{
+    left: 5%;
+  }
+  .board-btn{
+    left: 20px;
+    margin-right: 25px;
+    width: 20px;
+    height: 20px;
+  }
+  .label {
+    font-size: 8px;
+    left: 27px;
+  }
+  #count-label {
+    margin-right: 30px;
+  }
+  #start-label {
+    margin-right: 22px;
+  }
+  #on, #off {
+    top: 130px;
+    font-size: 8px;
+  }
+  #on {
+    left: 110px;
+  }
+  #off {
+    left:50px;
+  }
+  .switch {
+    width: 29px;
+    height: 12px;
+    top: 128px;
+    left: 70px;
+  }
+  .slider:before {
+    height: 10px;
+    width: 7px;
+}
+@media screen and (max-width: 370px) {
+  #game {
+    width:300px;
+    height: 300px;
+  }
+  #board {
+    width: 160px;
+    height: 160px;
+    top: 148px;
+    margin-left: 65px;
+  }
+  #game-title {
+    font-size: 28px;
+  }
+  .centered{
+    left: 0;
+  }
+  #strictlight {
+    margin-left: 124px;
+  }
+  .board-btn{
+    left: 10px;
+  }
+  .label {
+    font-size: 6px;
+    left: 25px;
+  }
+  #count-label {
+    margin-right: 28px;
+    left:30px;
+  }
+  #start-label {
+    margin-right: 28px;
+    left: 28px;
+  }
+  #on, #off {
+    top: 130px;
+    font-size: 6px;
+  }
+  #on {
+    left: 105px;
+  }
+  #off {
+    left:45px;
+  }
+}
